@@ -152,7 +152,7 @@ source = ColumnDataSource(data=data)
 colors = itertools.cycle(palette)
 
 plot = figure(
-    # x_range=data["dates"],
+    x_range=data["dates"],
     x_axis_type="datetime",
     y_range=Range1d(0, 250000),
     title="Player amount on AoE2:DE, AoE3:DE and AoE4 leaderboards"
